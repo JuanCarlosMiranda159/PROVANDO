@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>fundamentos java </title>
+</head>
+<body class="">
+    <div class="text-bg-primary height:100px w-auto position-relative">
+
+
+<h1 class="position-absolute bottom-0 end-0">fundamentos java scrip
+     </h1>
+ <p>Lorem ipsum dolor sit amet, consectetur 
+ adipisicing elit. Laborum error distinctio
+ voluptas! Beatae hic expedita, harum sed
+  molestias dignissimos reiciendis optio, 
+  perspiciatis quia iure inventore impedit
+   repellendus et ad vitae </p>
+</div>
+
+
+   
+<script>
+    /*NO USAR VAR POR QUE ES DE GLOBAL - USAR LET QUE SOLO ES DE BLOQUE */ 
+var hola ="hola mundo"
+console.log(hola); 
+let hello="hola mundo"
+console.log(hello);
+console.log(window);
+console.log(window.hola);
+console.log(window.hello);
+
+
+
+var musica="rock";
+console.log("variable musica antes del bloque",musica);
+
+                    //************ aqui se usa variable VAR" GLOBAL
+
+
+
+
+
+var musica="pop"; //nuevo valor de var
+{
+//aqui se cambia el valor de la variable var
+console.log("variable musica  dentro de bloque",musica);//este cambia x que es un bloque con VAR
+}
+//aqui sale cambiado el valor de la variable
+console.log("variable musica despues del bloque",musica);
+
+
+
+
+//*********************** variable LET BLOQUE
+console.log("*************************************");
+
+let musica2="rock";
+console.log("variable musica antes del bloque",musica2);
+
+
+{
+let musica2="pop";                          
+console.log("variable musica  dentro de bloque",musica2);// este no cambiara por q es bloque con LET
+}
+
+
+console.log("variable musica despues del bloque",musica2);
+
+
+
+
+
+var  comida="llama asada";
+console.log(comida)
+{
+    var comida="llama rostisada";
+    console.log(comida);
+}
+console.log(comida);
+
+
+
+
+let juegos="dota2";
+console.log(juegos);
+
+
+{
+let juegos="dota1"
+console.log(juegos);
+}
+console.log(juegos);
+
+//constantes 
+const pi=3.1416;
+console.log(pi);
+//const pi=14555; nose se puede cambiar
+
+let a;
+a=25;
+console.log(a);
+{
+let a;
+a=26;
+console.log(a);
+}
+
+let objetos={
+    nombre:"juan",
+    edad:25
+}
+
+
+let colores=["rojo","verde","azul"]
+console.log(objetos);
+console.log(colores);
+//cambiar valores
+objetos.juegos="dota2";
+colores.push("anaranjado");
+console.log(objetos);
+console.log(colores);
+colores.push("blanco");
+objetos.frase="confe";
+console.log(objetos);
+console.log(colores);
+
+const persona={
+    nombre:"jose",
+    edad:17
+}
+console.log(persona);
+const colors=["negro","blanco","violeta"];
+console.log(colors);
+
+persona.juego="albion";
+colors.push("rojo");
+console.log(persona,colors);
+
+
+
+//cadenas de texto string
+
+let nombre="juan carlos";
+let apellido="miranda";
+let saludo=new String("hola mundo");
+let lorem ="lore mamet  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum error distinctio voluptas Beatae hic expedita, harum sedmolestias dignissimos reiciendis optio, perspiciatis quia iure inventore impeditrepellendus et ad vitae";
+console.log(nombre,apellido,saludo)
+console.log(nombre.length,apellido.length); //todo podria ir dentro de un console.log
+console.log (nombre.toLocaleUpperCase()); //mayuscula
+console.log(apellido.toLocaleLowerCase());//minusculo
+console.log(lorem.includes("amet")); //buscar similitud
+console.log(apellido.includes("jose"))//buscar simulitud
+console.log(lorem.trim());//quitar espacios
+console.log(lorem.split(","));
+
+
+// juntar concatenar 
+
+
+let name="jose"
+let lastname="miranda"
+let saludos ="hola mi nombre es"+" "+name+" "+lastname;//juntar 
+console.log(saludos);
+
+
+
+
+
+
+
+
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
